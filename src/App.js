@@ -13,13 +13,13 @@ export default function Portfolio() {
       title: "Portfolio Website",
       description: "A responsive portfolio website featuring cool animations, dynamic sections, and smooth transitions built with React.",
       tags: ["React", "Tailwind CSS", "JavaScript", "HTML Canvas"],
-      link: "#"
+      link: "https://github.com/MaxLee0325/Portfolio"
     },
     {
       title: "QuickCash",
       description: "Android application that allows users to find and post short-term gigs, as well as recruit workers.",
       tags: ["Android Studio", "Java", "Firebase", "REST APIs"],
-      link: "#"
+      link: "https://github.com/MaxLee0325/QuickCash"
     },
     {
       title: "SpaceShooter",
@@ -34,30 +34,30 @@ export default function Portfolio() {
       link: "https://github.com/MaxLee0325/Looper"
     },
     {
-      title: "Iventory Manager",
+      title: "Inventory Manager",
       description: "An web application features warehouse mangement functionality and switch between different role of users",
       tags: ["Java", "JavaScript", "MySQL", "Springboot", "Node.JS", "Vue"],
-      link: "#"
+      link: "https://github.com/MaxLee0325/InventoryManagement"
     },
     {
       title: "Titanic Data Analysis",
       description: "Data analysis and visualization project predicting passenger survival using decision tree models and interactive dashboards.",
       tags: ["Python", "Pandas", "Scikit-learn", "Decision Trees"],
-      link: "#"
+      link: "https://github.com/MaxLee0325/Titanic-Data-Analysis"
     }
   ];
 
   const skills = [
     "Java", "JavaScript", "SQL", "React", "Node.js", "Python",
-    "HTML/CSS", "Git", "REST APIs",
-    "Agile", "C#", "C", "CI/CD", "Data Science"
+    "HTML/CSS", "Git", "REST APIs", 
+    "Agile", "C#", "C", "CI/CD", "Data Science", "Linux", "Bash"
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-green-500 to-slate-900">
       {/* Navigation */}
       <nav className="fixed w-full bg-slate-900/80 backdrop-blur-sm z-50 border-b border-purple-500/20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-6">
           <div className="flex justify-between items-center h-16">
             <span className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
               Yongteng (Max) Li
@@ -86,6 +86,8 @@ export default function Portfolio() {
           {mobileMenuOpen && (
             <div className="md:hidden pb-4">
               <a href="#about" className="block py-2 text-gray-300 hover:text-purple-400">About</a>
+              <a href="#education" className="block py-2 text-gray-300 hover:text-purple-400">Education</a>
+              <a href="#experience" className="block py-2 text-gray-300 hover:text-purple-400">Experience</a>
               <a href="#projects" className="block py-2 text-gray-300 hover:text-purple-400">Projects</a>
               <a href="#skills" className="block py-2 text-gray-300 hover:text-purple-400">Skills</a>
               <a href="#contact" className="block py-2 text-gray-300 hover:text-purple-400">Contact</a>
